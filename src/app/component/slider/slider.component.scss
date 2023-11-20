@@ -1,0 +1,79 @@
+.slider {
+  position: relative;
+  height: 100vh;
+
+  .slide {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+
+    &-bg {
+      height: 100vh;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100vh;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+
+        object-fit: cover;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      }
+    }
+
+    &-pane {
+      position: absolute;
+      top: 5rem;
+      left: 5rem;
+      color: white;
+
+      .title {
+        font-size: 2.5rem;
+      }
+
+      .meta {
+        font-size: 1.2rem;
+
+
+      }
+
+      .description {
+        font-size: 1.2rem;
+        width: 70%;
+      }
+
+    }
+  }
+}
+
+.pi {
+  color: orange;
+}
+
+.slider[_ngcontent-ng-c951462306] .slide-pane[_ngcontent-ng-c951462306] .description[_ngcontent-ng-c951462306] {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Set the desired number of lines */
+  -webkit-box-orient: vertical;
+}
+
+
+/* Optional: Set a specific max-width if you want to limit the width of the container */
+.max-width-container {
+  max-width: 50rem;
+  /* Set your desired maximum width */
+
+}

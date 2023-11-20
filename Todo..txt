@@ -1,0 +1,2 @@
+1. Add loading to the componants
+2. update img gallery from primeng

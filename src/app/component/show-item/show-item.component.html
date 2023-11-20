@@ -1,0 +1,18 @@
+<a
+  href=""
+  class="show-item"
+  *ngIf="showItem"
+  [routerLink]="'/detail/' + showItem.id + '/' + showType"
+
+>
+  <div class="show-item-rating">
+    <i class="pi pi-star-fill"></i>
+    <span>{{ showItem.vote_average | number: "1.1-1" }}/10</span>
+  </div>
+  <div class="show-item-img">
+    <img [src]="imgPath.medium + showItem.poster_path" alt="" />
+  </div>
+  <div class="show-item-title">
+    <p>{{ showItem.original_title }}</p>
+  </div>
+</a>

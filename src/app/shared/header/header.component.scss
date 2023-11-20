@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  background-color: #212121;
+  border-bottom: #414141 solid 1px;
+
+  .logo {
+    a {
+      img {
+        width: 140px;
+        margin: 15px;
+      }
+    }
+  }
+
+  .navigation {
+    ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        display: inline;
+        margin-right: 15px;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

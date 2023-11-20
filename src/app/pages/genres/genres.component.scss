@@ -1,0 +1,31 @@
+@import '../../../styles/colors.scss';
+
+::ng-deep {
+
+  // .p-tag {
+  //   // display: flex;
+  //   padding: 5px;
+  //   background-color:red;
+  //   color: white;
+  //   margin-right: 10px;
+  //   margin-bottom: 10px;
+  //   font-size: 1.6em;
+  // }
+
+  .genres-links {
+
+    a{
+
+      padding: 5px;
+      background-color:$primary-color;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  border-radius: 5px;
+    font-size: 1.6em;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+}
